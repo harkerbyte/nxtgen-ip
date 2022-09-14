@@ -66,5 +66,5 @@ there you can provide them.
 
 ~~~
 Happy hacking (Just For Fun).
-                                          CYBERNETICS  -  C7B3RN3TI6
+                                          CYBERNETICS  -  C7B3RN3TIC6
 ~~~
