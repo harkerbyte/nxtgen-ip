@@ -46,9 +46,9 @@
 * Use a secure VPN
 
 ## Illicit usage punishment 
-* The use of this tool to illegally get someone's for ddos attack is illegal 
-* punishable according to federal computer fraud and abuse Act
-* Unauthorized ddos can lead to 10years in prison and $500,000 fine
+* The use of this tool to illegally in relation ddos attack.
+ Ddos  is illegal and punishable according to federal computer fraud and abuse Act
+ Unauthorized ddos can lead to 10years in prison and $500,000 fine
 * This tool must be used for tracking a lost / stolen device only.
 
 ## How to locate the longitude and latitude on the map
