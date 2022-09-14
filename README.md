@@ -40,7 +40,7 @@
 
 
 ## Protection Against Attacker
-* Do not give out your ip to non-official local hosting.
+* Do not give out your ip to a non-official local hosting machine.
 * Avoid suspicious fake campaign site urls.
 * Make use of browser that block site ads while browsing the internet
 * Use a secure VPN
