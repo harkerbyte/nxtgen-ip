@@ -46,7 +46,7 @@
 * Use a secure VPN
 
 ## Illicit usage punishment 
-* The use of this tool to illegally in relation ddos attack.
+* The use of this tool in relation to a ddos attack is illicit.
  Ddos  is illegal and punishable according to federal computer fraud and abuse Act
  Unauthorized ddos can lead to 10years in prison and $500,000 fine
 * This tool must be used for tracking a lost / stolen device only.
