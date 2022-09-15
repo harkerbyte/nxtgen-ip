@@ -56,13 +56,13 @@
 there you can provide them.
 * you can also use this domain for the tracking : https://latlong.net  / https://gps-coordinates.net
 ## Explore More in Hacking ...
-* Blog site : https://cyberhacks.science.blog
+* Blog site <a href=https://cyberhacks.science.blog> here</a> 
 
 
 ## Connect with me
 
-* https://facebook.com/cyberhacks6
-* FB MAIN ACC : https://facebook.com/shade234sherif
+* <a href=https://facebook.com/cyberhacks6>Facebook page</a>
+* <a href=https://facebook.com/shade234sherif>Main fb acc</a>
 
 ~~~
 Happy hacking (Just For Fun).
