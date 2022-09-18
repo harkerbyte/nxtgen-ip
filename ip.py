@@ -1,5 +1,4 @@
 import sys 
-from ast import ast 
 import requests 
 
 answer = True 
