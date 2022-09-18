@@ -14,7 +14,7 @@ while answer:
       def my_ip():
          response = requests.get('https://api64.ipify.org?format=json')
          print(my_ip)
-         break
+      break
 
     elif answer ==2:
         the_ip = input("INPUT THE IP ADDRESS HERE:")
