@@ -51,7 +51,7 @@ while answer:
                   "languages":requests.get('languages'),
                   }
                print(location_data())
-               break
+        break
     elif answer =="3":
          print('''\033[2;32m
          CHASE YOUR DREAMS(⌐■_■)
