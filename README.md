@@ -24,7 +24,7 @@
 >> git clone https://github.com/shade234sherif/nxtgen-ip
 >> cd nxtgen-ip
 >> python3 ip.py
-
+>> to open the results document ( cat results.txt )
 ```
 ## Installation for kali
 
@@ -36,6 +36,7 @@
 ## Features
 * Menu 
 * Developer's contact 
+* A text document to record the collected data
 
 
 
