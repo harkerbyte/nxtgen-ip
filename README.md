@@ -36,7 +36,7 @@
 ## Features
 * Menu 
 * Developer's contact 
-* A text document to record the collected data
+* A text document that stores data from the previous session
 
 
 
