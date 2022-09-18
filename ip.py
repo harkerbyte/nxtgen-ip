@@ -10,7 +10,7 @@ while answer:
     [4] Exit
     \033[2;0m''')
     answer = input("SELECT AN OPTION:")
-    break 
+
     if answer == 1:
       def my_ip():
          response = requests.get('https://api64.ipify.org?format=json')
