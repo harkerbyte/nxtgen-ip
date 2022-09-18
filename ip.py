@@ -51,8 +51,8 @@ while answer:
                   "currency_name":requests.get('currency_name'),
                   "languages":requests.get('languages'),
                   }
-                  return locate_data
-               print(location_data())
+               return locate_data
+              print(location_data())
         break
     elif answer =="3":
          print('''\033[2;32m
