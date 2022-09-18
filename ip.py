@@ -11,13 +11,13 @@ while answer:
     \033[2;0m''')
     answer = input("SELECT AN OPTION:")
 
-    if answer == 1:
+    if answer =="1":
       def my_ip():
          response = requests.get('https://api64.ipify.org?format=json')
          print(my_ip)
       break
 
-    elif answer ==2:
+    elif answer =="2":
         the_ip = input("INPUT THE IP ADDRESS HERE:")
         file_type= ('json')
         def  location_data():
@@ -68,7 +68,7 @@ while answer:
     elif answer =="4":
         sys.exit()
         
-    elif answer !="5":
+    elif answer !="":
         print("""INVALID OPTION
         
         KINDLY RETRY """)
