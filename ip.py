@@ -62,7 +62,7 @@ while answer:
             }
             return location_data
             print(location_data())
-            file = open('results.txt', 'a')
+            file = open('results.txt','x')
             file.write(location_data())
             file.close()
 
