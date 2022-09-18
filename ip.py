@@ -9,7 +9,7 @@ while answer:
     [3] Contact the developer 
     [4] Exit
     \033[2;0m''')
-    answer = ("SELECT AN OPTION:")
+    answer = input("SELECT AN OPTION:")
     break 
     if answer == 1:
       def my_ip():
