@@ -23,7 +23,7 @@ while answer:
         def  location_data():
                lookup='https://ipapi.co'
                response = (f'https://ipapi.co/{the_ip}/{file_type}')
-               location_data,{
+               locate_data,{
                   "ip":the_ip,
                   "org":requests.get('org'),
                   "hostname":requests.get('hostname'),
@@ -51,6 +51,7 @@ while answer:
                   "currency_name":requests.get('currency_name'),
                   "languages":requests.get('languages'),
                   }
+                  return locate_data
                print(location_data())
         break
     elif answer =="3":
