@@ -3,34 +3,38 @@ import requests
 
 answer = True
 while answer:
-    print('''\033[2;33m 
-    
-    _  _ _  _ ___ ____ ____ _  _    _ ___  
-    |\ |  \/   |  | __ |___ |\ | __ | |__] 
-    | \| _/\_  |  |__] |___ | \|    | |    
-                                         
-    [1] My ip
-    [2] Trace an IP
-    [3] Contact the developer 
-    [4] Exit
-    \033[2;0m''')
+    print('\033[2;33m \n'
+          '    \n'
+          '    _  _ _  _ ___ ____ ____ _  _    _ ___  \n'
+          '    |\ |  \/   |  | __ |___ |\ | __ | |__] \n'
+          '    | \| _/\_  |  |__] |___ | \|    | |    \n'
+          '    \n'
+          '    FOLLOW ON FACEBOOK : https://facebook.com/cyberhacks6\n'
+          '    JOIN US HERE : https://facebook.com/groups/shade234sherif  \n'
+          '                                     \n'
+          '    [1] My ip\n'
+          '    [2] Trace an IP\n'
+          '    [3] Contact the developer \n'
+          '    [4] Exit\n'
+          '    \033[2;32m')
     answer = input("SELECT AN OPTION:")
     if answer == "1":
         def my_ip():
-            response = requests.get('https://api64.ipify.org?format=json')
-            response.get("content")
-            print(response.content)
+            response = requests.get('https://api64.ipify.org?format=json').json()
+            return response
+
+
+        print(my_ip())
         break
 
     elif answer == "2":
         the_ip = input("INPUT THE IP ADDRESS HERE:")
-        file_type = 'json'
 
 
         def locate_data():
             lookup = 'https://ipapi.co'
-            response = (f'{lookup}/{the_ip}/{file_type}/').json()
-            location_data={
+            response = f'{lookup}/{the_ip}/json/'.json()
+            location_data = {
                 "ip": the_ip,
                 "org": response.get("org"),
                 "hostname": response.get("hostname"),
@@ -56,14 +60,17 @@ while answer:
                 "country_calling_code": response.get("country_calling_code"),
                 "currency": response.get("currency"),
                 "currency_name": response.get("currency_name"),
-                "languages": response.get("languages"),
+                "languages": response.get("languages")
             }
             return location_data
-        print(locate_data())
-        file = open('results.txt','x')
-        file.write(locate_data())
-        file.close()
 
+
+        print(locate_data())
+        x = locate_data()
+        file = open('results.txt', 'w')
+        file.write(str(x))
+        file.close()
+        print("\033[1;34m THE LAST SESSION DATA WERE RECORDED HERE \"results.txt\"\033[1;33m")
 
         break
     elif answer == "3":
