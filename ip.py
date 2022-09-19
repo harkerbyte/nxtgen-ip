@@ -28,12 +28,12 @@ while answer:
 
     elif answer == "2":
         the_ip = input("INPUT THE IP ADDRESS HERE:")
-        file_type = 'json'
+       
 
 
         def locate_data():
             lookup = 'https://ipapi.co'
-            response = requests.get(f'{lookup}/{the_ip}/{file_type}/').json()
+            response = requests.get(f'{lookup}/{the_ip}/json/').json()
             location_data={
                 "ip": the_ip,
                 "org": response.get('org'),
