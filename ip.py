@@ -18,10 +18,12 @@ while answer:
     answer = input("SELECT AN OPTION:")
     if answer == "1":
         def my_ip():
-            response = requests.get('https://api64.ipify.org?format=json')
-
-
+            response = requests.get('https://api64.ipify.org?format=json').json()
+            return response["ip"]
         print(my_ip())
+
+
+
         break
 
     elif answer == "2":
