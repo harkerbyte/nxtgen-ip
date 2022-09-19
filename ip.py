@@ -66,8 +66,6 @@ while answer:
         file.write(json.dumps(locate_data(), indent=4))
         file.close()
         print("\033[1;34m THE LAST SESSION DATA WERE RECORDED HERE \"results.txt\"\033[1;33m")
-
-
         break
     elif answer == "3":
         print('''\033[2;32m
