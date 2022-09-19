@@ -31,7 +31,7 @@ while answer:
        
 
 
-        def locate_data():
+        def location_data():
             lookup = 'https://ipapi.co'
             response = requests.get(f'{lookup}/{the_ip}/json/').json()
             location_data={
@@ -63,9 +63,9 @@ while answer:
                 "languages": response.get('languages'),
             }
             return location_data
-            print(locate_data())
+            print(location_data())
             file = open('results.txt','x')
-            file.write(locate_data())
+            file.write(location_data())
             file.close()
 
 
