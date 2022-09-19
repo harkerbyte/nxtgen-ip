@@ -1,5 +1,6 @@
 import sys
 import requests
+import json
 
 answer = True
 while answer:
@@ -30,10 +31,9 @@ while answer:
     elif answer == "2":
         the_ip = input("INPUT THE IP ADDRESS HERE:")
 
-
         def locate_data():
             lookup = 'https://ipapi.co'
-            response = f'{lookup}/{the_ip}/json/'.json()
+            response = requests.get(f'https://ipapi.co/{the_ip}/json/').json()
             location_data = {
                 "ip": the_ip,
                 "org": response.get("org"),
@@ -65,7 +65,7 @@ while answer:
             return location_data
 
 
-        print(locate_data())
+        print(json.dumps(locate_data(), indent=4))
         x = locate_data()
         file = open('results.txt', 'w')
         file.write(str(x))
