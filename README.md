@@ -53,6 +53,9 @@
  Unauthorized ddos can lead to 10years in prison and $500,000 fine
 * This tool must be used for tracking a lost / stolen device only.
 
+
+![APM](https://img.shields.io/apm/l/nxtgen-ip?style=for-the-badge)
+
 ## How to locate the longitude and latitude on the map
 * Using Google Maps click the right menu area on your computer 
 there you can provide them.
