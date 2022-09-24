@@ -8,8 +8,9 @@
    <i>Request and https modules are at the latest version... Efficiency and Accuracy is 100% certain.</i></li></br>
    <i>Use this tool for legal tracking and educational ip look-up tutorials</i></li></br> 
    <i>Free for all🙂....ENJOY</i></li></br>
-
-
+![Ghost](https://img.shields.io/badge/ghost-000?style=for-the-badge&logo=ghost&logoColor=%23F7DF1E)
+![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white)
+![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 
 ## Installation procedure for android terminals( TERMUX )
