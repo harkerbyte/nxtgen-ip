@@ -65,10 +65,9 @@ there you can provide them.
 
 
 ## Connect with me
+<a href = https://facebook.com/cyberhacks6>![Facebook](https://img.shields.io/badge/Facebook-%231877F2.svg?style=for-the-badge&logo=Facebook&logoColor=white)</a>
 
-* <a href=https://facebook.com/cyberhacks6>Facebook page</a>
-* <a href=https://facebook.com/shade234sherif>Main fb acc</a>
-
+<a href =https://facebook.com/shade234sherif>![Messenger](https://img.shields.io/badge/Messenger-00B2FF?style=for-the-badge&logo=messenger&logoColor=white)</a>
 ~~~
 Happy hacking (Just For Fun).
                                           CYBERNETICS  -  C7B3RN3TIC6
