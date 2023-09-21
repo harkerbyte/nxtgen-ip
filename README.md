@@ -24,7 +24,7 @@
 >> pip install git 
 >> git clone https://github.com/harkerbyte/nxtgen-ip
 >> cd nxtgen-ip
->> python3 ip.py
+>> python3 ip_obsc.py
 >> to open the results document ( cat results.txt )
 ```
 ## Installation for kali
@@ -32,7 +32,7 @@
 * pip install pycryptodome
 * sudo git clone https://github.com/harkerbyte/nxtgen-ip
 * cd nxtgen-ip 
-* python3 ip.py
+* python3 ip_obsc.py
 
 
 ## Features
@@ -71,5 +71,5 @@ there you can provide them.
 <a href =https://facebook.com/shade234sherif>![Messenger](https://img.shields.io/badge/Messenger-00B2FF?style=for-the-badge&logo=messenger&logoColor=white)</a>
 ~~~
 Happy hacking (Just For Fun).
-                                          CYBERNETICS  -  C7B3RN3TIC6
+                                          SHADE  -  SH^DE
 ~~~
