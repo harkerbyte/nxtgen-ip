@@ -21,7 +21,8 @@
 >> pkg install python3 
 >> pip intsall requests
 >> pip install ast
->> pip install git 
+>> pip install pycryptodome
+>> pip install git
 >> git clone https://github.com/shade234sherif/nxtgen-ip
 >> cd nxtgen-ip
 >> python3 ip.py
@@ -29,6 +30,7 @@
 ```
 ## Installation for kali
 
+* pip install pycryptodome
 * sudo git clone https://github.com/shade234sherif/nxtgen-ip
 * cd nxtgen-ip 
 * python3 ip.py
