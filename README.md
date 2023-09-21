@@ -1,19 +1,18 @@
 ![wallpaperflare com_wallpaper (16)](https://user-images.githubusercontent.com/79071277/190261730-5f32f2ea-5ddf-41f9-9e75-fbbad54a1ab8.jpg)
 # nxtgen-IP ( ip lookup)
 
-   <i><br> nxtgen-IP is a software api written in python_3</i></li></br>
-   <i>It can be used to get your phone's ip{internet protocol} locally also</i></li></br>
-   <i>your ip wouldn't be returned to any database { genuineness📮 }</i></li></br>
-   <i>It can also be used to track and get detailed information in relation to an ip address {192.168.0.00}</i></li></br>
+   <i><br> nxtgen-IP - A framework wrapped around an **API**</i></li></br>
+   <i>It can be used to fetch your device's ip{internet protocol}...
+   Your ip won't be returned to any database { genuineness 💯 }</i></li></br>
+   <i>This package can be used to track and generate a detailed information in relation to an ip address {192.168.0.00}</i></li></br>
    <i>Request and https modules are at the latest version... Efficiency and Accuracy is 100% certain.</i></li></br>
    <i>Use this tool for legal tracking and educational ip look-up tutorials</i></li></br> 
    <i>Free for all🙂....ENJOY</i></li></br>
 ![Ghost](https://img.shields.io/badge/ghost-000?style=for-the-badge&logo=ghost&logoColor=%23F7DF1E)
-![Google Chrome](https://img.shields.io/badge/Google%20Chrome-4285F4?style=for-the-badge&logo=GoogleChrome&logoColor=white)
 ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
 
 
-## Installation procedure for android terminals( TERMUX )
+## Installation procedure for Linux based OS & window terminals
 ```
 >> apt update 
 >> apt upgrade 
@@ -23,7 +22,7 @@
 >> pip intsall requests
 >> pip install ast
 >> pip install git 
->> git clone https://github.com/shade234sherif/nxtgen-ip
+>> git clone https://github.com/harkerbyte/nxtgen-ip
 >> cd nxtgen-ip
 >> python3 ip.py
 >> to open the results document ( cat results.txt )
@@ -31,7 +30,7 @@
 ## Installation for kali
 
 * pip install pycryptodome
-* sudo git clone https://github.com/shade234sherif/nxtgen-ip
+* sudo git clone https://github.com/harkerbyte/nxtgen-ip
 * cd nxtgen-ip 
 * python3 ip.py
 
