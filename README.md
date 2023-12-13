@@ -1,7 +1,7 @@
 ![wallpaperflare com_wallpaper (16)](https://user-images.githubusercontent.com/79071277/190261730-5f32f2ea-5ddf-41f9-9e75-fbbad54a1ab8.jpg)
 # nxtgen-IP ( ip lookup)
 
-   <i><br> nxtgen-IP - A framework wrapped around an **API**</i></li></br>
+   <i><br> nxtgen-IP - A framework wrapped around an **API** @ https://ipapi.co</i></li></br>
    <i>It can be used to fetch your device's ip{internet protocol}...
    Your ip won't be returned to any database { genuineness 💯 }</i></li></br>
    <i>This package can be used to track and generate a detailed information in relation to an ip address {192.168.0.00}</i></li></br>
@@ -18,13 +18,14 @@
 >> apt upgrade 
 >> pkg istall python-y 
 >> pkg install python3
+>> pip install json
 >> pip install pycryptodome
 >> pip intsall requests
 >> pip install ast
 >> pip install git 
 >> git clone https://github.com/harkerbyte/nxtgen-ip
 >> cd nxtgen-ip
->> python3 ip_obsc.py
+>> python3 ip_obsc.py  |  python3 ip.py 
 >> to open the results document ( cat results.txt )
 ```
 ## Installation for kali
