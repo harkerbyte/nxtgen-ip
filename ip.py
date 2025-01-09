@@ -13,9 +13,8 @@ while answer:
     [2] Trace an IP
     [3] Contact the developer 
     [4] Exit.
-    
    \033[34m   
-   Shade
+     ™ Lone wolf - sh^de
    \033[0m
    ''')
 
