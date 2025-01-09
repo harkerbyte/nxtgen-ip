@@ -4,7 +4,7 @@ import json
 
 answer = True
 while answer:
-    print(r'''    
+    print('''    
 \033[2;36m 
     _  _ _  _ ___ ____ ____ _  _    _ ___  
     |\ |  \/   |  | __ |___ |\ | __ | |__] 
@@ -15,7 +15,7 @@ while answer:
     [3] Contact the developer
     [4] Exit.
 
-\033[34m github - harkerbyte \033[0m
+\033[34m
 ''')
 
     answer = input("SELECT AN OPTION:")
