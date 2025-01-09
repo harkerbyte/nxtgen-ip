@@ -78,14 +78,16 @@ while answer:
                 
                 
                 
-                google_lnk = 'https://www.google.com/maps/@'
+                google_lnk = 'https://www.google.com/maps/search/'
                 
                 longitudo = requests.get(f'{lookup}/{the_ip}/{file_type}').json()
                 longitude = longitudo.get("longitude")
                 print("""
                       """)
                 
-                print("Copy and paste the link on your chrome browser to view via google map  "f'{google_lnk}{latitude},{longitude}')
+                print("Copy and paste the link on your chrome browser to view via google map")
+                
+                print(f'{google_lnk},@{latitude},{longitude},3z')
             
             elif gen=='n':
                 print("Thank you for using my tool... Need any Help? Reach Out To Harkerbyte")
