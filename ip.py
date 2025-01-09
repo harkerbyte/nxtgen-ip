@@ -14,7 +14,9 @@ while answer:
     [3] Contact the developer 
     [4] Exit.
     
-   \033[34m   Team solo - Shade \033[0m
+   \033[34m   
+   Shade
+   \033[0m
    ''')
 
     answer = input("SELECT AN OPTION:")
