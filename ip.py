@@ -14,7 +14,6 @@ while answer:
     [3] Check for update
     [4] Contact the developer
     [5] Exit.
-    \033[34m
 ''')
 
     answer = input("SELECT AN OPTION:")
@@ -101,11 +100,11 @@ while answer:
       def fetch_update():
         try:
          current_dir = os.getcwd()
-         subprocess.run(['git' 'pull' 'origin' 'main'], check = True, cwd= current_dir)
-         return subprocess.CalledProcess()
-         
-        except subprocess.CalledProcessError as error: 
-          return error
+         handler = subprocess.run(['git' 'pull' 'origin' 'main'], capture_output = True, text = True)
+         if handler.stdout:
+           return handler.stdout
+           
+         return handler.stderr
       
       print(fetch_update)
         
