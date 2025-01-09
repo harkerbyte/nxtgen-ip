@@ -4,17 +4,17 @@ import json
 
 answer = True
 while answer:
-    print('''\033[2; 34m''''''
-    _  _ _  _ ___ ____ ____ _  _    _ ___  
-    |\ |  \/   |  | __ |___ |\ | __ | |__] 
-    | \| _/\_  |  |__] |___ | \|    | |    
+    print("\033[2;34m"
+    "_  _ _  _ ___ ____ ____ _  _    _ ___"  
+    "|\ |  \/   |  | __ |___ |\ | __ | |__]"
+    "| \| _/\_  |  |__] |___ | \|    | |"
 
-    [1] My ip
-    [2] Ip query
-    [3] Check for update
-    [4] Contact the developer
-    [5] Exit.
-''')
+    "[1] My ip"
+    "[2] Ip query"
+    "[3] Check for update"
+    "[4] Contact the developer"
+    "[5] Exit."
+  )
 
     answer = input("SELECT AN OPTION:")
     if answer == "1":
@@ -62,7 +62,7 @@ while answer:
                 
             }
             return location_data
-        print(json.dumps(locate_data(), indent=4))
+        print(json.loads(locate_data(), indent=4))
         file = open('results.txt', 'w')
         file.write(json.dumps(locate_data(), indent=4))
         file.close()
