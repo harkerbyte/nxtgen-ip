@@ -4,18 +4,17 @@ import json
 
 answer = True
 while answer:
-    print('''    
-\033[2;36m 
+    print('''
     _  _ _  _ ___ ____ ____ _  _    _ ___  
     |\ |  \/   |  | __ |___ |\ | __ | |__] 
     | \| _/\_  |  |__] |___ | \|    | |    
 
     [1] My ip
     [2] Ip query
-    [3] Contact the developer
-    [4] Exit.
-
-\033[34m
+    [3] Check for update
+    [4] Contact the developer
+    [5] Exit.
+    \033[34m
 ''')
 
     answer = input("SELECT AN OPTION:")
@@ -96,21 +95,30 @@ while answer:
                 print("Command not recognised")
                 
                 
+    elif answer == '3':
+      import subprocess 
+      import os
+      def fetch_update():
+        try:
+         current_dir = os.getcwd()
+         subprocess.run(['git' 'pull' 'origin' 'main'], check = True, cwd= current_dir)
+         return subprocess.CalledProcess()
+         
+        except subprocess.CalledProcessError as error: 
+          return error
+      
+      print(fetch_update)
+        
 
-    elif answer == "3":
-        print('''\033[2;35m
-         CHASE YOUR DREAMS(⌐■_■)
-         DO WHAT YOU LOVE (。_。) & SUCCESS WILL COME TO YOU NATURALLY
-         
-         
+    elif answer == "4":
+        print('''\033[2;34m
          FACEBOOK PAGE : https://facebook.com/harkerbyte
          GROUP CHAT : https://facebook.com/groups/shade234sherif
          MAIN ACC : https://facebook.com/shade234sherif
-         ALSO FOLLOW MY CODES ON GITHUB/GITLAB @harkerbyte
-      
-          ''')
+         BE SURE TO FOLLOW ON GITHUB @harkerbyte 
+         ''')
         
-    elif answer == "4":
+    elif answer == "5":
         sys.exit()
 
     elif answer != "":
