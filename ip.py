@@ -4,7 +4,7 @@ import json
 
 answer = True
 while answer:
-    print('''
+    print('''\003[2m, 34
     _  _ _  _ ___ ____ ____ _  _    _ ___  
     |\ |  \/   |  | __ |___ |\ | __ | |__] 
     | \| _/\_  |  |__] |___ | \|    | |    
@@ -99,14 +99,17 @@ while answer:
       import os
       def fetch_update():
         try:
-         current_dir = os.getcwd()
-         handler = subprocess.run(['git' 'pull' 'origin' 'main'], capture_output = True, text = True)
+          
+         handler = subprocess.run(['git', 'pull', 'origin', 'main'], capture_output = True, text = True)
          if handler.stdout:
-           return handler.stdout
+           return handler.stdout.strip()
            
-         return handler.stderr
+         return handler.stderr.strip()
+        
+        except Exception as error:
+          return f'Error encountered {str(error)}'
       
-      print(fetch_update)
+      print(fetch_update())
         
 
     elif answer == "4":
@@ -116,6 +119,8 @@ while answer:
          MAIN ACC : https://facebook.com/shade234sherif
          BE SURE TO FOLLOW ON GITHUB @harkerbyte 
          ''')
+         
+         break
         
     elif answer == "5":
         sys.exit()
