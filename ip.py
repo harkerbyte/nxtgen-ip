@@ -14,8 +14,8 @@ while answer:
     [3] Contact the developer 
     [4] Exit.
     
-    Automated by Sh^de
-    \033[2;37m''')
+   \033[34m   Team solo - Shade \033[0m
+   ''')
 
     answer = input("SELECT AN OPTION:")
     if answer == "1":
