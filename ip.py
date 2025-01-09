@@ -84,7 +84,7 @@ while answer:
                 print("""
                       """)
                 
-                print(f'{google_lnk}@{latitude},{longitude},3z\nOpen the given link on your browser')
+                print(f'{google_lnk}@{latitude},{longitude},3z\n')
                 break
             
             elif gen=='n':
