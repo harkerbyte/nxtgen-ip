@@ -5,7 +5,6 @@ import json
 answer = True
 while answer:
     print('''\033[2;36m 
-    
     _  _ _  _ ___ ____ ____ _  _    _ ___  
     |\ |  \/   |  | __ |___ |\ | __ | |__] 
     | \| _/\_  |  |__] |___ | \|    | |    
@@ -13,7 +12,9 @@ while answer:
     [1] My ip
     [2] Trace an IP
     [3] Contact the developer 
-    [4] Exit
+    [4] Exit.
+    
+    Automated by Sh^de
     \033[2;37m''')
 
     answer = input("SELECT AN OPTION:")
@@ -22,7 +23,7 @@ while answer:
             response = requests.get('https://api64.ipify.org?format=json').json()
             return response
         print(my_ip())
-        break
+        
 
     elif answer == "2":
         the_ip = input("INPUT THE IP ADDRESS HERE:")
@@ -107,11 +108,9 @@ while answer:
          ALSO FOLLOW MY CODES ON GITHUB/GITLAB @harkerbyte
       
           ''')
-        break
+        
     elif answer == "4":
         sys.exit()
 
     elif answer != "":
-        print("""INVALID OPTION
-        
-        KINDLY RETRY """)
+        print("""INVALID OPTION KINDLY RETRY """)
