@@ -120,7 +120,7 @@ while answer:
          BE SURE TO FOLLOW ON GITHUB @harkerbyte 
          ''')
          
-         break
+        break
         
     elif answer == "5":
         sys.exit()
