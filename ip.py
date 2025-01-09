@@ -4,20 +4,19 @@ import json
 
 answer = True
 while answer:
-    print(r'''
-    \033[2;36m 
+    print(r'''    
+\033[2;36m 
     _  _ _  _ ___ ____ ____ _  _    _ ___  
     |\ |  \/   |  | __ |___ |\ | __ | |__] 
     | \| _/\_  |  |__] |___ | \|    | |    
-                                         
+
     [1] My ip
     [2] Ip query
-    [3] Contact the developer 
+    [3] Contact the developer
     [4] Exit.
-   \033[34m   
-     SH^DE
-   \033[0m
-   ''')
+
+\033[34m github - harkerbyte \033[0m
+''')
 
     answer = input("SELECT AN OPTION:")
     if answer == "1":
