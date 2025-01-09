@@ -85,7 +85,6 @@ while answer:
                       """)
                 
                 print("Copy and paste the link on your chrome browser to view via google map  "f'{google_lnk}{latitude},{longitude}')
-                sys.exit()
             
             elif gen=='n':
                 print("Thank you for using my tool... Need any Help? Reach Out To Harkerbyte")
