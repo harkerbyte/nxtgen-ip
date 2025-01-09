@@ -18,14 +18,12 @@
 >> apt upgrade 
 >> pkg istall python-y 
 >> pkg install python3
->> pip install json
->> pip install pycryptodome
 >> pip intsall requests
 >> pip install ast
 >> pip install git 
 >> git clone https://github.com/harkerbyte/nxtgen-ip
 >> cd nxtgen-ip
->> python3 ip_obsc.py  |  python3 ip.py 
+>> python ip.py 
 >> to open the results document ( cat results.txt )
 ```
 ## Installation for kali
