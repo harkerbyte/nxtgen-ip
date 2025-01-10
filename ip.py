@@ -116,11 +116,11 @@ while answer:
         
 
     elif answer == "4":
-      contact =         
+      contact =
       """
-         FACEBOOK PAGE : https://facebook.com/harkerbyte \n
-         GROUP CHAT : https://facebook.com/group/shade234sherif \n
-         MAIN ACC : https://facebook.com/shade234sherif \n
+         FACEBOOK PAGE : https://facebook.com/harkerbyte
+         GROUP CHAT : https://facebook.com/group/shade234sherif
+         MAIN ACC : https://facebook.com/shade234sherif
          BE SURE TO FOLLOW ON GITHUB @harkerbyte
       """
       clear_text = "\033[2;33m".join(contact.split())
