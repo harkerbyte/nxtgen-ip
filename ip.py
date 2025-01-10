@@ -68,14 +68,15 @@ while answer:
                 
             }
             return location_data
-      print('That wasn\'t an ip address')      
       
         print(json.dumps(locate_data(), indent=4))
         file = open('results.txt', 'w')
         file.write(json.dumps(locate_data(), indent=4))
         file.close()
+     
+      print('That wasn\'t an ip address')
       
-        info = list(locate_data().values())
+      info = list(locate_data().values())
       if info[2] or info[3] != None:
         
           gen = True
