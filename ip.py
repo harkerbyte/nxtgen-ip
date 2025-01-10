@@ -76,19 +76,19 @@ while answer:
      
       
         info = list(locate_data().values())
-        if info[2] and info[3] != "null":
+        if isinstance(info[2,3], (int,float)):
         
           gen = True
           while gen:
-             gen = input("\033[2;34mTo generate a google map link with coordinates input 'y' if not 'n':\033[2;0m")
-             if gen =='y':
+             gen = input("\033[2;34mTo generate a google map link with coordinates input 'Y' if not 'N':\033[2;0m")
+             if gen =='Y' or 'y':
                latitude = info[2]
                longitude = info[3]
                google_lnk = 'https://www.google.com/maps/search/'
                print(f'\033[2;35m{google_lnk}@{latitude},{longitude},3z\033[2;0m\n')
                break
              
-             elif gen == "n":
+             elif gen == 'N' or 'n':
                
                break
              elif gen!='':
@@ -104,7 +104,7 @@ while answer:
           
          handler = subprocess.run(['git', 'pull', 'origin', 'main'], capture_output = True, text = True)
          if handler.stdout:
-           return f'\033[2;35m{handler.stdout.strip()}\033[2;0m\n Restart the program if necessary'
+           return f'\033[2;35m{handler.stdout.strip()}\nRestart the program if necessary\033[2;0m'
            
            
          return f'\033[2;31m{handler.stderr.strip()}\033[2;0m'
