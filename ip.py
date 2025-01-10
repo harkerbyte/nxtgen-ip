@@ -4,8 +4,8 @@ import json
 
 answer = True
 while answer:
-    print(
-    """
+    print("\033[2;34m"
+    r"""
     _  _ _  _ ___ ____ ____ _  _    _ ___
     |\ |  \/   |  | __ |___ |\ | __ | |__]
     | \| _/\_  |  |__] |___ | \|    | |
@@ -23,7 +23,7 @@ while answer:
         def my_ip():
             response = requests.get('https://api64.ipify.org?format=json').json()
             
-            ur_ip = json.loads(response["ip"])
+            ur_ip = response["ip"]
             return f'Your ip address : {ur_ip}'
         print(my_ip())
         
@@ -116,13 +116,15 @@ while answer:
         
 
     elif answer == "4":
-        print("\033[2;34m"
-         """
+      contact =         
+      """
          FACEBOOK PAGE : https://facebook.com/harkerbyte \n
          GROUP CHAT : https://facebook.com/group/shade234sherif \n
          MAIN ACC : https://facebook.com/shade234sherif \n
          BE SURE TO FOLLOW ON GITHUB @harkerbyte
-         """)
+      """
+      clear_text = "\033[2;33m".join(contact.split())
+        print(clear_text)
          
         break
         
