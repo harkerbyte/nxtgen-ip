@@ -4,7 +4,7 @@ import json
 
 answer = True
 while answer:
-    print("\033[2;34m\n"
+    print("\033[2;34m"
     """\n
     _  _ _  _ ___ ____ ____ _  _    _ ___
     |\ |  \/   |  | __ |___ |\ | __ | |__]
@@ -17,7 +17,7 @@ while answer:
     [4] Contact the developer
     [5] Exit.
     """
-  "\033[2,0m")
+  )
 
     answer = input("SELECT AN OPTION:")
     if answer == "1":
