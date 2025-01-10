@@ -21,22 +21,22 @@ while answer:
   
 
   answer = input("SELECT AN OPTION:")
-    if answer == "1":
-        def my_ip():
-            response = requests.get('https://api64.ipify.org?format=json').json()
+  if answer == "1":
+      def my_ip():
+          response = requests.get('https://api64.ipify.org?format=json').json()
             
-            ur_ip = response["ip"]
-            return f'Your ip address : {ur_ip}'
-        print(my_ip())
+          ur_ip = response["ip"]
+          return f'Your ip address : {ur_ip}'
+      print(my_ip())
         
 
-    elif answer == "2":
-        the_ip = input("INPUT THE IP ADDRESS HERE:")
-        file_type = 'json'
-        lookup = 'https://ipapi.co'
+  elif answer == "2":
+      the_ip = input("INPUT THE IP ADDRESS HERE:")
+      file_type = 'json'
+      lookup = 'https://ipapi.co'
 
 
-        def locate_data():
+      def locate_data():
             response = requests.get(f'{lookup}/{the_ip}/{file_type}/').json()
             location_data={
                 "ip": the_ip,
@@ -98,7 +98,7 @@ while answer:
                 print("Command not recognised")
                 
                 
-    elif answer == '3':
+  elif answer == '3':
       import subprocess 
       import os
       def fetch_update():
@@ -117,7 +117,7 @@ while answer:
       print(fetch_update())
         
 
-    elif answer == "4":
+  elif answer == "4":
       contact ="""
          FACEBOOK PAGE : https://facebook.com/harkerbyte
          
@@ -131,8 +131,8 @@ while answer:
       print(clear_text)
          
         
-    elif answer == "5":
+  elif answer == "5":
         sys.exit()
 
-    elif answer != "":
+  elif answer != "":
         print("""INVALID OPTION KINDLY RETRY """)
