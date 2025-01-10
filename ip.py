@@ -77,7 +77,7 @@ while answer:
         if key["latitude"] or key["longitude"] != "null":
         
           gen = True
-           while gen:
+          while gen:
               gen= input("To generate a google map link with coordinates input 'y' if not 'n':")
              if gen =='y':
                 
