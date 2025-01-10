@@ -32,7 +32,7 @@ while answer:
 
   elif answer == "2":
       the_ip = input("INPUT THE IP ADDRESS HERE:")
-      if isinstance(the_ip, float):
+      if isinstance(the_ip, (int, float)):
         file_type = 'json'
         lookup = 'https://ipapi.co'
         
