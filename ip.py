@@ -76,22 +76,19 @@ while answer:
      
       
         info = list(locate_data().values())
-        if info[2] and info[3] != None:
+        if info[2] and info[3]:
         
           gen = True
           while gen:
-             gen = input("To generate a google map link with coordinates input 'y' if not 'n':")
+             gen = input("\033[2;34mTo generate a google map link with coordinates input 'y' if not 'n':\033[2;0m")
              if gen =='y':
                latitude = info[2]
                longitude = info[3]
                google_lnk = 'https://www.google.com/maps/search/'
                print(f'\033[2;34m{google_lnk}@{latitude},{longitude},3z\033[2;0m\n')
                break
-            
-             elif gen=='n':
-               print("Need any additional Help? Reach Out To @harkerbyte")
-               break
-            
+             elif gen == "n":
+               pass
              elif gen!='':
                print("Command not recognised")')     
       else:
