@@ -90,7 +90,7 @@ while answer:
              elif gen == "n":
                pass
              elif gen!='':
-               print("Command not recognised")')     
+               print("Command not recognised")    
       else:
         print('\033[2;31mThat wasn\'t an ip address\033[2;0m')
       
