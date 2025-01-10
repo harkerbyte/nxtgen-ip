@@ -73,7 +73,8 @@ while answer:
       file.write(json.dumps(locate_data(), indent=4))
       file.close()
       
-      for key in locate_data().keys:
+      info = locate_data()
+      for key in info:
         if key["latitude"] or key["longitude"] != "null":
         
           gen = True
