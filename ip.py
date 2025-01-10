@@ -73,12 +73,13 @@ while answer:
       file.write(json.dumps(locate_data(), indent=4))
       file.close()
       
-      if locate_data().location_data["latidude"]  or locate_data().location_data["longitude"] != "null":
+      for value in locate_data().items:
+        if key["latitude"] or key["longitude"] != "null":
         
-        gen = True
-        while gen:
-            gen= input("To generate a google map link with coordinates input 'y' if not 'n':")
-            if gen =='y':
+          gen = True
+           while gen:
+              gen= input("To generate a google map link with coordinates input 'y' if not 'n':")
+             if gen =='y':
                 
                 latitude = location_data["latitude"]
                 longitude = location_data["longitude"]
@@ -87,14 +88,14 @@ while answer:
                 print(f'\033[2;34m{google_lnk}@{latitude},{longitude},3z\033[2;0m\n')
                 break
             
-            elif gen=='n':
+              elif gen=='n':
                 print("Need any additional Help? Reach Out To @harkerbyte")
                 break
             
-            elif gen!='':
+              elif gen!='':
                 print("Command not recognised")
-                
-      pass
+        pass        
+      
   elif answer == '3':
       import subprocess 
       import os
