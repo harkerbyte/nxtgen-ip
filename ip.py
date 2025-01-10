@@ -9,8 +9,7 @@ while answer:
     _  _ _  _ ___ ____ ____ _  _    _ ___
     |\ |  \/   |  | __ |___ |\ | __ | |__]
     | \| _/\_  |  |__] |___ | \|    | |
-    \n"""
-    """
+    
     [1] My ip
     [2] Ip query
     [3] Check for update
@@ -24,8 +23,8 @@ while answer:
         def my_ip():
             response = requests.get('https://api64.ipify.org?format=json').json()
             
-            ur_ip = json.loads(str(response), indent = 4)
-            return f'Your ip address : {ur_ip["ip"]}'
+            ur_ip = json.loads(response["ip"])
+            return f'Your ip address : {ur_ip}'
         print(my_ip())
         
 
