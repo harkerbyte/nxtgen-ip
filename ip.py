@@ -77,17 +77,12 @@ while answer:
       while gen:
             gen= input("To generate a google map link with coordinates input 'y' if not 'n':")
             if gen =='y':
-                latitudo = requests.get(f'{lookup}/{the_ip}/{file_type}').json()
-                latitude = latitudo.get("latitude")
                 
-                
-                
+                latitude = location_data["latitude"]
+                longitude = location_data["longitude"]
                 google_lnk = 'https://www.google.com/maps/search/'
                 
-                longitudo = requests.get(f'{lookup}/{the_ip}/{file_type}').json()
-                longitude = longitudo.get("longitude")
-                
-                print(f'{google_lnk}@{latitude},{longitude},3z\n')
+                print(f'\033[2;34m{google_lnk}@{latitude},{longitude},3z\033[2;0m\n')
                 break
             
             elif gen=='n':
