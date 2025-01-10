@@ -78,7 +78,7 @@ while answer:
         
           gen = True
           while gen:
-              gen= input("To generate a google map link with coordinates input 'y' if not 'n':")
+             gen= input("To generate a google map link with coordinates input 'y' if not 'n':")
              if gen =='y':
                latitude = location_data["latitude"]
                longitude = location_data["longitude"]
