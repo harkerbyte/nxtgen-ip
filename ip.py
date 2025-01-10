@@ -76,7 +76,7 @@ while answer:
      
       
         info = list(locate_data().values())
-        if isinstance(info[2,3], (int,float)):
+        if isinstance(info[2], (int,float)):
         
           gen = True
           while gen:
