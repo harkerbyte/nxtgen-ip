@@ -74,16 +74,14 @@ while answer:
       file.close()
       
       info = locate_data()
-      for value in info.values():
-        print(value)
-        if len(list(value)) > 3:
+      if len(info.values()) > 3:
         
           gen = True
           while gen:
              gen = input("To generate a google map link with coordinates input 'y' if not 'n':")
              if gen =='y':
-               latitude = value[2]
-               longitude = value[3]
+               latitude = info.values()[2]
+               longitude = info.values()[3]
                google_lnk = 'https://www.google.com/maps/search/'
                print(f'\033[2;34m{google_lnk}@{latitude},{longitude},3z\033[2;0m\n')
                break
@@ -94,7 +92,7 @@ while answer:
             
              elif gen!='':
                print("Command not recognised")
-        pass        
+      pass        
       
   elif answer == '3':
       import subprocess 
