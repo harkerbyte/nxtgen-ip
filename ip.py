@@ -95,8 +95,8 @@ while answer:
              elif gen!='':
                print("Command not recognised")
         print('No data was captured')     
-      
-      print('That wasn\'t an ip address')
+      else:
+        print('\033[2;31mThat wasn\'t an ip address\033[2;0m')
       
   elif answer == '3':
       import subprocess 
