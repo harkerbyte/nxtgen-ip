@@ -23,9 +23,9 @@ while answer:
     if answer == "1":
         def my_ip():
             response = requests.get('https://api64.ipify.org?format=json').json()
-            with response as x:
-              ur_ip = json.loads(x, indent = 2)
-              return f'Your ip address : {ur_ip["ip"]}'
+            
+            ur_ip = json.loads(response, indent = 2)
+            return f'Your ip address : {ur_ip["ip"]}'
         print(my_ip())
         
 
