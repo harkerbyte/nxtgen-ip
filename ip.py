@@ -16,6 +16,7 @@ while answer:
     [4] Contact the developer
     [5] Exit.
     """
+    "\033[2,0m"
   )
 
     answer = input("SELECT AN OPTION:")
@@ -117,10 +118,10 @@ while answer:
 
     elif answer == "4":
       contact ="""
-         FACEBOOK PAGE : https://facebook.com/harkerbyte
-         GROUP CHAT : https://facebook.com/group/shade234sherif
-         MAIN ACC : https://facebook.com/shade234sherif
-         BE SURE TO FOLLOW ON GITHUB @harkerbyte
+         FACEBOOK PAGE : https://facebook.com/harkerbyte\n
+         GROUP CHAT : https://facebook.com/group/shade234sherif\n
+         MAIN ACC : https://facebook.com/shade234sherif\n
+         BE SURE TO FOLLOW ON GITHUB @harkerbyte\n
         """
       clear_text = "\033[2;33m".join(contact.split())
       print(clear_text)
