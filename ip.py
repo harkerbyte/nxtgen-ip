@@ -107,6 +107,7 @@ while answer:
          if handler.stdout:
            return handler.stdout.strip()
            
+           
          return handler.stderr.strip()
         
         except Exception as error:
