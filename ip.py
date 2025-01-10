@@ -73,7 +73,7 @@ while answer:
       file.write(json.dumps(locate_data(), indent=4))
       file.close()
       
-      info = list(locate_data())
+      info = list(locate_data().values())
       if info[2] or info[3] != None:
         
           gen = True
