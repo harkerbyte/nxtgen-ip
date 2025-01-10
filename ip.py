@@ -74,18 +74,16 @@ while answer:
       file.close()
       
       info = locate_data()
-      print(info)
       for key, value in info.items():
-        if value["latitude"] != "null" or value["longitude"] != "null":
+        if value[2] != "null" or value[3] != "null":
         
           gen = True
           while gen:
-             gen= input("To generate a google map link with coordinates input 'y' if not 'n':")
+             gen = input("To generate a google map link with coordinates input 'y' if not 'n':")
              if gen =='y':
-               latitude = location_data["latitude"]
-               longitude = location_data["longitude"]
+               latitude = value[2]
+               longitude = value[3]
                google_lnk = 'https://www.google.com/maps/search/'
-                
                print(f'\033[2;34m{google_lnk}@{latitude},{longitude},3z\033[2;0m\n')
                break
             
