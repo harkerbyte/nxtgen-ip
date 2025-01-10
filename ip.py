@@ -16,7 +16,7 @@ while answer:
     [4] Contact the developer
     [5] Exit.
     """
-    "\033[2,0m"
+    "\033[2;0m"
   )
 
     answer = input("SELECT AN OPTION:")
@@ -123,7 +123,7 @@ while answer:
          MAIN ACC : https://facebook.com/shade234sherif\n
          BE SURE TO FOLLOW ON GITHUB @harkerbyte\n
         """
-      clear_text = "\033[2;33m".join(contact.split("\n"))
+      clear_text = "\033[2;33m".join(contact)
       print(clear_text)
          
         
