@@ -85,10 +85,11 @@ while answer:
                latitude = info[2]
                longitude = info[3]
                google_lnk = 'https://www.google.com/maps/search/'
-               print(f'\033[2;34m{google_lnk}@{latitude},{longitude},3z\033[2;0m\n')
+               print(f'\033[2;35m{google_lnk}@{latitude},{longitude},3z\033[2;0m\n')
                break
              elif gen == "n":
-               pass
+               
+               break
              elif gen!='':
                print("Command not recognised")    
       else:
