@@ -4,8 +4,8 @@ import json
 
 answer = True
 while answer:
-    print("\033[2;34m"
-    """\n
+    print("\033[2;34m\n"
+    """
     _  _ _  _ ___ ____ ____ _  _    _ ___
     |\ |  \/   |  | __ |___ |\ | __ | |__]
     | \| _/\_  |  |__] |___ | \|    | |
@@ -116,11 +116,11 @@ while answer:
         
 
     elif answer == "4":
-        print('''\033[2;34m
-         FACEBOOK PAGE : https://facebook.com/harkerbyte
-         GROUP CHAT : https://facebook.com/groups/shade234sherif
-         MAIN ACC : https://facebook.com/shade234sherif
-         BE SURE TO FOLLOW ON GITHUB @harkerbyte 
+        print('''\033[2;32m
+         FACEBOOK PAGE : https://facebook.com/harkerbyte \n
+         GROUP CHAT : https://facebook.com/groups/shade234sherif \n
+         MAIN ACC : https://facebook.com/shade234sherif \n
+         BE SURE TO FOLLOW ON GITHUB @harkerbyte
          ''')
          
         break
