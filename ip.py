@@ -24,7 +24,7 @@ while answer:
         def my_ip():
             response = requests.get('https://api64.ipify.org?format=json').json()
             
-            ur_ip = json.loads(response, indent = 4)
+            ur_ip = json.loads(str(response), indent = 4)
             return f'Your ip address : {ur_ip["ip"]}'
         print(my_ip())
         
@@ -117,13 +117,13 @@ while answer:
         
 
     elif answer == "4":
-        print("\033[2;35m \r"
+        print(strip("\033[2;35m \r"
          """
          FACEBOOK PAGE : https://facebook.com/harkerbyte \n
          GROUP CHAT : https://facebook.com/group/shade234sherif \n
          MAIN ACC : https://facebook.com/shade234sherif \n
          BE SURE TO FOLLOW ON GITHUB @harkerbyte
-         """).strip()
+         """))
          
         break
         
