@@ -116,7 +116,7 @@ while answer:
         
 
     elif answer == "4":
-        print("\033[2;32m \t"
+        print("\033[2;32m \r"
          """
          FACEBOOK PAGE : https://facebook.com/harkerbyte \n
          GROUP CHAT : https://facebook.com/group/shade234sherif \n
