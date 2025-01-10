@@ -87,12 +87,12 @@ while answer:
                print(f'\033[2;34m{google_lnk}@{latitude},{longitude},3z\033[2;0m\n')
                break
             
-              elif gen=='n':
-                print("Need any additional Help? Reach Out To @harkerbyte")
-                break
+             elif gen=='n':
+               print("Need any additional Help? Reach Out To @harkerbyte")
+               break
             
-              elif gen!='':
-                print("Command not recognised")
+             elif gen!='':
+               print("Command not recognised")
         pass        
       
   elif answer == '3':
