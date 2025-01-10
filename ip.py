@@ -74,8 +74,8 @@ while answer:
       file.close()
       
       info = locate_data()
-      for key in info:
-        if key["latitude"] or key["longitude"] != "null":
+      for key, value in info.items():
+        if value["latitude"] != "null" or value["longitude"] != "null":
         
           gen = True
           while gen:
