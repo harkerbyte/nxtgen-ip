@@ -16,8 +16,8 @@ while answer:
     [4] Contact the developer
     [5] Exit.
     """
-  head_text ="\033[2;34m".join(textwrap.dedent(head ,"\033[2;0m"))
-  print(head_text)
+  head_text ="\033[2;34m".join(textwrap.dedent(head))
+  print(f'{head_text}\033[2;0m')
   
 
   answer = input("SELECT AN OPTION:")
