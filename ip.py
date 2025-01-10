@@ -68,7 +68,7 @@ while answer:
                 
             }
             return location_data
-      
+         
         print(json.dumps(locate_data(), indent=4))
         file = open('results.txt', 'w')
         file.write(json.dumps(locate_data(), indent=4))
