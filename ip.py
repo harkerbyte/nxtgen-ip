@@ -87,11 +87,12 @@ while answer:
                google_lnk = 'https://www.google.com/maps/search/'
                print(f'\033[2;35m{google_lnk}@{latitude},{longitude},3z\033[2;0m\n')
                break
+             
              elif gen == "n":
                
                break
              elif gen!='':
-               print("Command not recognised")    
+               print("\033[2;31mCommand not recognised\033[2;0m")    
       else:
         print('\033[2;31mThat wasn\'t an ip address\033[2;0m')
       
