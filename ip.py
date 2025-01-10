@@ -73,7 +73,7 @@ while answer:
       file.write(json.dumps(locate_data(), indent=4))
       file.close()
       
-      if location_data["latidude"]  or location_data["longitude"] != "null":
+      if locate_data().location_data["latidude"]  or locate_data().location_data["longitude"] != "null":
         
         gen = True
         while gen:
