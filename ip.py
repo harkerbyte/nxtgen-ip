@@ -32,8 +32,7 @@ while answer:
 
   elif answer == "2":
       the_ip = input("INPUT THE IP ADDRESS HERE:")
-      try:
-        float(the_ip)
+      if len(the_ip.split('.')) >= 3:
         file_type = 'json'
         lookup = 'https://ipapi.co'
         
@@ -96,7 +95,7 @@ while answer:
              elif gen!='':
                print("Command not recognised")
         print('\033[2;31mNo data was captured\033[2;0m')     
-      except ValueError:
+      else:
         print('\033[2;31mThat wasn\'t an ip address\033[2;0m')
       
   elif answer == '3':
