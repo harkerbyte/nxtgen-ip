@@ -76,7 +76,7 @@ while answer:
      
       
         info = list(locate_data().values())
-        if info[2] and info[3]:
+        if info[2] and info[3] != "null":
         
           gen = True
           while gen:
