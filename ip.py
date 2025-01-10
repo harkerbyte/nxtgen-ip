@@ -73,15 +73,15 @@ while answer:
       file.write(json.dumps(locate_data(), indent=4))
       file.close()
       
-      info = locate_data()
-      if info.values()[2] or info.values()[3]:
+      info = list(locate_data())
+      if info[2] or info[3] != None:
         
           gen = True
           while gen:
              gen = input("To generate a google map link with coordinates input 'y' if not 'n':")
              if gen =='y':
-               latitude = info.values()[2]
-               longitude = info.values()[3]
+               latitude = info[2]
+               longitude = info[3]
                google_lnk = 'https://www.google.com/maps/search/'
                print(f'\033[2;34m{google_lnk}@{latitude},{longitude},3z\033[2;0m\n')
                break
