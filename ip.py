@@ -75,7 +75,7 @@ while answer:
       
       info = locate_data()
       for value in info.values():
-        if value[2] != null or value[3] != null":
+        if value[2] or value[3]:
         
           gen = True
           while gen:
