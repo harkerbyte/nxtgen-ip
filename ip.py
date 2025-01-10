@@ -1,10 +1,11 @@
 import sys
 import requests
 import json
+import textwrap
 
 answer = True
 while answer:
-    print("\033[2;34m"
+    print(textwrap.dedent("\033[2;34m"
     r"""
     _  _ _  _ ___ ____ ____ _  _    _ ___
     |\ |  \/   |  | __ |___ |\ | __ | |__]
@@ -17,7 +18,7 @@ while answer:
     [5] Exit.
     """
     "\033[2;0m"
-  )
+  ))
 
     answer = input("SELECT AN OPTION:")
     if answer == "1":
@@ -117,7 +118,6 @@ while answer:
         
 
     elif answer == "4":
-      import textwrap
       contact ="""
          FACEBOOK PAGE : https://facebook.com/harkerbyte
          GROUP CHAT : https://facebook.com/group/shade234sherif
