@@ -5,20 +5,20 @@ import textwrap
 
 answer = True
 while answer:
-    print(textwrap.dedent("\033[2;34m"
-    r"""
+  head = """
     _  _ _  _ ___ ____ ____ _  _    _ ___
-    |\ |  \/   |  | __ |___ |\ | __ | |__]
-    | \| _/\_  |  |__] |___ | \|    | |
+    |\\ |  \\/   |  | __ |___ |\\ | __ | |__]
+    | \\| _/\\_  |  |__] |___ | \\|    | |
     
     [1] My ip
     [2] Ip query
     [3] Check for update
     [4] Contact the developer
     [5] Exit.
-    """
-    "\033[2;0m"
-  ))
+    \033[2;0m"""
+    head_text ="\033[2;34m".join(textwrap.dedent(head))
+    print(head_text)
+  
 
     answer = input("SELECT AN OPTION:")
     if answer == "1":
