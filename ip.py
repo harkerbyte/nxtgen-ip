@@ -32,7 +32,7 @@ while answer:
 
   elif answer == "2":
       the_ip = input("INPUT THE IP ADDRESS HERE:")
-      if isinstance(str(the_ip), (int, float)):
+      if isinstance(float(the_ip), (int, float)):
         file_type = 'json'
         lookup = 'https://ipapi.co'
         
@@ -76,7 +76,7 @@ while answer:
      
       
         info = list(locate_data().values())
-        if info[2] or info[3] != None:
+        if info[2] and info[3] != None:
         
           gen = True
           while gen:
