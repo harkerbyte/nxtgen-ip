@@ -76,7 +76,7 @@ while answer:
       info = locate_data()
       for value in info.values():
         print(value)
-        if value[2] or value[3]:
+        if len(list(value)) > 3:
         
           gen = True
           while gen:
