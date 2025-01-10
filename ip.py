@@ -68,13 +68,13 @@ while answer:
                 
             }
             return location_data
-        print(json.dumps(locate_data(), indent=4))
-        file = open('results.txt', 'w')
-        file.write(json.dumps(locate_data(), indent=4))
-        file.close()
+      print(json.dumps(locate_data(), indent=4))
+      file = open('results.txt', 'w')
+      file.write(json.dumps(locate_data(), indent=4))
+      file.close()
         
-        gen = True
-        while gen:
+      gen = True
+      while gen:
             gen= input("To generate a google map link with coordinates input 'y' if not 'n':")
             if gen =='y':
                 latitudo = requests.get(f'{lookup}/{the_ip}/{file_type}').json()
