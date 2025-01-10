@@ -72,9 +72,11 @@ while answer:
       file = open('results.txt', 'w')
       file.write(json.dumps(locate_data(), indent=4))
       file.close()
+      
+      if location_data["latidude"]  or location_data["longitude"] != "null":
         
-      gen = True
-      while gen:
+        gen = True
+        while gen:
             gen= input("To generate a google map link with coordinates input 'y' if not 'n':")
             if gen =='y':
                 
@@ -86,13 +88,13 @@ while answer:
                 break
             
             elif gen=='n':
-                print("Thank you for using my tool... Need any Help? Reach Out To Harkerbyte")
+                print("Need any additional Help? Reach Out To @harkerbyte")
                 break
             
             elif gen!='':
                 print("Command not recognised")
                 
-                
+      pass
   elif answer == '3':
       import subprocess 
       import os
