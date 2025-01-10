@@ -5,17 +5,18 @@ import json
 answer = True
 while answer:
     print("\033[2;34m\n"
-    """
+    """\n
     _  _ _  _ ___ ____ ____ _  _    _ ___
     |\ |  \/   |  | __ |___ |\ | __ | |__]
     | \| _/\_  |  |__] |___ | \|    | |
     """
-
-    "[1] My ip\n"
-    "[2] Ip query\n"
-    "[3] Check for update\n"
-    "[4] Contact the developer\n"
-    "[5] Exit.\n"
+    """\n
+    [1] My ip
+    [2] Ip query
+    [3] Check for update
+    [4] Contact the developer
+    [5] Exit.
+    """
   "\033[2,0m")
 
     answer = input("SELECT AN OPTION:")
