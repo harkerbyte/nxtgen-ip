@@ -75,7 +75,7 @@ while answer:
       
       info = locate_data()
       if len(info.values()) > 3:
-        
+          print(info.values())
           gen = True
           while gen:
              gen = input("To generate a google map link with coordinates input 'y' if not 'n':")
