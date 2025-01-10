@@ -123,9 +123,9 @@ while answer:
          BE SURE TO FOLLOW ON GITHUB @harkerbyte
         """
       clear_text = "\033[2;33m".join(contact.split())
-        print(clear_text)
+      print(clear_text)
          
-        break
+      break
         
     elif answer == "5":
         sys.exit()
