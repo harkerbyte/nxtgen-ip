@@ -32,7 +32,7 @@ while answer:
 
   elif answer == "2":
       the_ip = input("INPUT THE IP ADDRESS HERE:")
-      if the_ip is int or float:
+      if isinstance(int, the_ip) or isinstance(float, the_ip):
         file_type = 'json'
         lookup = 'https://ipapi.co'
         
@@ -74,10 +74,9 @@ while answer:
         file.write(json.dumps(locate_data(), indent=4))
         file.close()
      
-      print('That wasn\'t an ip address')
       
-      info = list(locate_data().values())
-      if info[2] or info[3] != None:
+        info = list(locate_data().values())
+        if info[2] or info[3] != None:
         
           gen = True
           while gen:
@@ -95,7 +94,9 @@ while answer:
             
              elif gen!='':
                print("Command not recognised")
-      print('No data was captured')        
+        print('No data was captured')     
+      
+      print('That wasn\'t an ip address')
       
   elif answer == '3':
       import subprocess 
