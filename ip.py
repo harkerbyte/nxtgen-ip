@@ -16,11 +16,11 @@ while answer:
     [4] Contact the developer
     [5] Exit.
     \033[2;0m"""
-    head_text ="\033[2;34m".join(textwrap.dedent(head))
-    print(head_text)
+  head_text ="\033[2;34m".join(textwrap.dedent(head))
+  print(head_text)
   
 
-    answer = input("SELECT AN OPTION:")
+  answer = input("SELECT AN OPTION:")
     if answer == "1":
         def my_ip():
             response = requests.get('https://api64.ipify.org?format=json').json()
