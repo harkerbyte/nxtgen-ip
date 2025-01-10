@@ -74,7 +74,8 @@ while answer:
       file.close()
       
       info = locate_data()
-      for key, value in info.items():
+      print(info.values())
+      for value in info.values():
         if value[2] != "null" or value[3] != "null":
         
           gen = True
