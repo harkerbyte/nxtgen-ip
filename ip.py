@@ -74,7 +74,7 @@ while answer:
       file.close()
       
       info = locate_data()
-      if info.values()[2] and info.values()[3] != None:
+      if info.values()[2] or info.values()[3]:
         
           gen = True
           while gen:
