@@ -23,7 +23,9 @@ while answer:
     if answer == "1":
         def my_ip():
             response = requests.get('https://api64.ipify.org?format=json').json()
-            return response
+            with response as x:
+              ur_ip = json.loads(x, indent = 2)
+              return f'Your ip address : {ur_ip["ip"]}'
         print(my_ip())
         
 
@@ -83,8 +85,6 @@ while answer:
                 
                 longitudo = requests.get(f'{lookup}/{the_ip}/{file_type}').json()
                 longitude = longitudo.get("longitude")
-                print("""
-                      """)
                 
                 print(f'{google_lnk}@{latitude},{longitude},3z\n')
                 break
