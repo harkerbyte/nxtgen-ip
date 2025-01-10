@@ -16,7 +16,7 @@ while answer:
     [4] Contact the developer
     [5] Exit.
     """
-  head_text ="\033[2;34m".join(textwrap.dedent(head .join("\033[2;0m"))
+  head_text ="\033[2;34m".join(textwrap.dedent(head +"\033[2;0m"))
   print(head_text)
   
 
