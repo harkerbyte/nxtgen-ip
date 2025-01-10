@@ -123,7 +123,7 @@ while answer:
          MAIN ACC : https://facebook.com/shade234sherif\n
          BE SURE TO FOLLOW ON GITHUB @harkerbyte\n
         """
-      clear_text = "\033[2;33m".join(contact.split())
+      clear_text = "\033[2;33m".join(contact.split("\n"))
       print(clear_text)
          
         
