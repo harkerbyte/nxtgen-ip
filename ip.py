@@ -126,7 +126,6 @@ while answer:
       clear_text = "\033[2;33m".join(contact.split())
       print(clear_text)
          
-      break
         
     elif answer == "5":
         sys.exit()
