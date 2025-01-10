@@ -116,12 +116,13 @@ while answer:
         
 
     elif answer == "4":
-        print('''\033[2;32m \t
+        print("\033[2;32m \t"
+         """
          FACEBOOK PAGE : https://facebook.com/harkerbyte \n
-         GROUP CHAT : https://facebook.com/groups/shade234sherif \n
+         GROUP CHAT : https://facebook.com/group/shade234sherif \n
          MAIN ACC : https://facebook.com/shade234sherif \n
          BE SURE TO FOLLOW ON GITHUB @harkerbyte
-         ''')
+         """)
          
         break
         
