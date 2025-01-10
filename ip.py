@@ -117,13 +117,14 @@ while answer:
         
 
     elif answer == "4":
+      import textwrap
       contact ="""
-         FACEBOOK PAGE : https://facebook.com/harkerbyte\n
-         GROUP CHAT : https://facebook.com/group/shade234sherif\n
-         MAIN ACC : https://facebook.com/shade234sherif\n
-         BE SURE TO FOLLOW ON GITHUB @harkerbyte\n
+         FACEBOOK PAGE : https://facebook.com/harkerbyte
+         GROUP CHAT : https://facebook.com/group/shade234sherif
+         MAIN ACC : https://facebook.com/shade234sherif
+         BE SURE TO FOLLOW ON GITHUB @harkerbyte
         """
-      clear_text = "\033[2;33m".join(contact)
+      clear_text = "\033[2;33m".join(textwrap.dedent(contact))
       print(clear_text)
          
         
