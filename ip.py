@@ -2,7 +2,8 @@ import sys
 import requests
 import json
 import textwrap
-
+import subprocess 
+import os
 answer = True
 while answer:
   head = """
@@ -14,7 +15,8 @@ while answer:
     [2] Ip query
     [3] Check for update
     [4] Contact the developer
-    [5] Exit.
+    [5] Join WhatsApp community
+    [6] Exit.
     """
   head_text ="\033[2;34m".join(textwrap.dedent(head))
   print(f'{head_text}\033[2;0m')
@@ -97,8 +99,6 @@ while answer:
         print('\033[2;31mThat wasn\'t an ip address\033[2;0m')
       
   elif answer == '3':
-      import subprocess 
-      import os
       def fetch_update():
         try:
           
@@ -127,9 +127,10 @@ while answer:
         """
       clear_text = "\033[2;33m".join(textwrap.dedent(contact))
       print(clear_text)
-         
-        
-  elif answer == "5":
+
+  elif answer == '5':
+    subprocess.run(['xdg-open','https://whatsapp.com/channel/0029Vb5f98Z90x2p6S1rhT0S'])
+  elif answer == "6":
         sys.exit()
 
   elif answer != "":
