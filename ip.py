@@ -68,11 +68,10 @@ while answer:
                 "currency": response.get("currency"),
                 "currency_name": response.get("currencyName"),
                 "languages": response.get("languages"),
-                
             }
             return location_data
          
-        for key, value in json.dump(locate_data(), indent=2):
+        for key, value in locate_data():
           if value:
             print(f'{key} : {value}')
         file = open('results.txt', 'w')
