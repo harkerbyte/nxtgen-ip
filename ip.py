@@ -74,7 +74,7 @@ while answer:
          
         print(json.dumps(locate_data(), indent=2))
         file = open('results.txt', 'w')
-        json.dumps(locate_data(),file, indent=2)
+        json.dump(locate_data(),file, indent=2)
         file.close()
      
       
