@@ -31,15 +31,14 @@ while answer:
           return f'Your ip address : {ur_ip}'
       print(my_ip())
         
-
   elif answer == "2":
       the_ip = input("INPUT THE IP ADDRESS HERE:")
       if len(the_ip.split('.')) >= 3:
         file_type = 'json'
-        lookup = 'http://ip-api.com'
+        lookup = 'https://ipapi.co'
         
         def locate_data():
-            response = requests.get(f'{lookup}/{file_type}/{the_ip}/').json()
+            response = requests.get(f'{lookup}/{the_ip}/{file_type}/').json()
             location_data={
                 "ip": the_ip,
                 "org": response.get("org"),
@@ -47,26 +46,24 @@ while answer:
                 "longitude": response.get("longitude"),
                 "hostname": response.get("hostname"),
                 "version": response.get("version"),
-                "zip" : response.get('zip'),
-                "proxy" : response.get('proxy'),
                 "city": response.get("city"),
                 "country": response.get("country"),
-                "country_code": response.get("countryCode"),
-                "country_name": response.get("countryName"),
-                "country_capital": response.get("countryCapital"),
+                "country_code": response.get("country_code"),
+                "country_name": response.get("country_name"),
+                "country_capital": response.get("country_capital"),
                 "country_tld": response.get("country_tld"),
                 "country_area": response.get("country_area"),
                 "country_population": response.get("country_population"),
                 "region": response.get("region"),
-                "region_code": response.get("regionCode"),
-                "continent_code": response.get("continentCode"),
+                "region_code": response.get("region_code"),
+                "continent_code": response.get("continent_code"),
                 "in_europe": response.get("in_eu"),
                 "postal": response.get("postal"),
                 "timezone": response.get("timezone"),
                 "utc_offset": response.get("offset"),
                 "country_calling_code": response.get("country_calling_code"),
                 "currency": response.get("currency"),
-                "currency_name": response.get("currencyName"),
+                "currency_name": response.get("currency_name"),
                 "languages": response.get("languages"),
                 
             }
