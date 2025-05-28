@@ -36,10 +36,10 @@ while answer:
       the_ip = input("INPUT THE IP ADDRESS HERE:")
       if len(the_ip.split('.')) >= 3:
         file_type = 'json'
-        lookup = 'https://ipapi.co'
+        lookup = 'http://ip-api.com'
         
         def locate_data():
-            response = requests.get(f'{lookup}/{the_ip}/{file_type}/').json()
+            response = requests.get(f'{lookup}/{file_type}/{the_ip}/').json()
             location_data={
                 "ip": the_ip,
                 "org": response.get("org"),
@@ -47,33 +47,36 @@ while answer:
                 "longitude": response.get("longitude"),
                 "hostname": response.get("hostname"),
                 "version": response.get("version"),
+                "zip" : response.get('zip'),
+                "proxy" : response.get('proxy'),
                 "city": response.get("city"),
                 "country": response.get("country"),
-                "country_code": response.get("country_code"),
-                "country_name": response.get("country_name"),
-                "country_code_iso3": response.get("country_code_iso3"),
-                "country_capital": response.get("country_capital"),
+                "country_code": response.get("countryCode"),
+                "country_name": response.get("countryName"),
+                "country_capital": response.get("countryCapital"),
                 "country_tld": response.get("country_tld"),
                 "country_area": response.get("country_area"),
                 "country_population": response.get("country_population"),
                 "region": response.get("region"),
-                "region_code": response.get("region_code"),
-                "continent_code": response.get("continent_code"),
+                "region_code": response.get("regionCode"),
+                "continent_code": response.get("continentCode"),
                 "in_europe": response.get("in_eu"),
                 "postal": response.get("postal"),
                 "timezone": response.get("timezone"),
-                "utc_offset": response.get("utc_offset"),
+                "utc_offset": response.get("offset"),
                 "country_calling_code": response.get("country_calling_code"),
                 "currency": response.get("currency"),
-                "currency_name": response.get("currency_name"),
+                "currency_name": response.get("currencyName"),
                 "languages": response.get("languages"),
                 
             }
             return location_data
          
-        print(json.dumps(locate_data(), indent=4))
+        for key, value in json.dump(locate_data(), indent=2):
+          if value:
+            print(f'{key} : {value}')
         file = open('results.txt', 'w')
-        file.write(json.dumps(locate_data(), indent=4))
+        json.dumps(locate_data(),file, indent=2)
         file.close()
      
       
