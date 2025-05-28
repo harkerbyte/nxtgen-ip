@@ -38,10 +38,10 @@ while answer:
         lookup = 'https://ipapi.co'
         
         def locate_data():
-            response = requests.get(f'{lookup}/{the_ip}/{file_type}/')
-            print('Status Code : %s'%response.status_code)
-            response = response.json()
+            responsen = requests.get(f'{lookup}/{the_ip}/{file_type}/')
+            response = responsen.json()
             location_data={
+                "status code" : responsen.status_code,
                 "ip": the_ip,
                 "org": response.get("org"),
                 "latitude": response.get("latitude"),
