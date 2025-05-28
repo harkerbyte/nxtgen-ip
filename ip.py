@@ -68,12 +68,11 @@ while answer:
                 "currency": response.get("currency"),
                 "currency_name": response.get("currencyName"),
                 "languages": response.get("languages"),
+                
             }
             return location_data
          
-        for key, value in locate_data():
-          if value:
-            print(f'{key} : {value}')
+        print(json.dumps(locate_data(), indent=2))
         file = open('results.txt', 'w')
         json.dumps(locate_data(),file, indent=2)
         file.close()
@@ -115,7 +114,7 @@ while answer:
           return f'Error encountered {str(error)}'
       
       print(fetch_update())
-        
+      sys.exit()
 
   elif answer == "4":
       contact ="""
