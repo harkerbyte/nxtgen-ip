@@ -104,7 +104,7 @@ while answer:
           
          handler = subprocess.run(['git', 'pull', 'origin', 'main'], capture_output = True, text = True)
          if handler.stdout:
-           return f'\033[2;35m{handler.stdout.strip()}\nRestart the program if necessary\033[2;0m'
+           return f'\033[2;35m{handler.stdout.strip()}\nRestart the program\033[2;0m'
            
            
          return f'\033[2;31m{handler.stderr.strip()}\033[2;0m'
